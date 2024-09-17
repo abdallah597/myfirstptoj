@@ -1,0 +1,750 @@
+
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    opacity: 1;
+    background-color: rgb(80, 94, 80);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 80%;
+    margin: auto;
+ /*position: relative;*/
+ /*   background-color: #1f1a1a;*/
+
+}
+
+.ull {
+    width: 60%;
+
+    float: right;
+padding-top: 10px;
+
+    text-align: right;
+}
+ li {
+    list-style: none;
+     font-size:28px;
+     margin:25px;
+
+    display: inline;
+     /*background-color: greenyellow;*/
+
+}
+
+.ull li a{
+    text-decoration: none;
+    color: #f1e8e8;
+    font-size: 20px;
+}
+
+.ull li:hover{
+    background-color:black;
+    opacity: .3;
+}
+
+.logo{
+    float: left;
+    margin-left: 20px;
+}
+.home {
+    height: 100vh;
+
+    background-image: url(../slider_01.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    /*z-index: 0;*/
+}
+.home-content {
+    position: absolute;
+    /*top: 50%;*/
+    /*bottom: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+    margin: auto;
+    text-align: center;
+    width:100%;
+    top :35%;
+}
+.home-content .firsthead {
+    font-size: 75px;
+    color: green;
+    text-transform:capitalize;}
+.home-content .firstcaption{
+    text-align: center;
+    margin: auto;
+    padding-top: 20px;
+    font-size: 45px;
+    text-transform:capitalize;
+    color: #ffffff;
+
+
+
+}
+.home-content .btn1{
+    margin-top: 50px;
+    font-size: 20px;
+    background-color:green;
+    text-align: center;
+    padding-top: 5px;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 120px;
+    height: 50px;
+
+}
+.home-content .btn2{
+    margin-top: 40px;
+
+    margin-left: 25px;
+    font-size: 20px;
+    background-color:green;
+    text-align: center;
+    padding-top: 5px;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 120px;
+    height: 50px;
+}
+.container2 a{
+    list-style: none;
+    color: black;
+    font-size: 30px;
+}
+.home-content .btn2:hover{
+    background-color:black;
+    opacity: .3;
+}
+.home-content .btn1:hover{
+    background-color:black;
+    opacity: .3;
+}
+.sectionheader{
+    text-align: center;
+    padding: 50px;
+}
+.sectionheader header2{
+    text-transform:capitalize ;
+
+}
+.pading1{
+    padding: 80px 0;
+}
+.sectionheader .line1 {
+    width: 125px;
+    height: 0px;
+    margin: auto;
+    border: 3px solid green;
+    margin-top: 10px;
+
+}
+.container2 {
+    width: 80%;
+    margin: auto;
+/*position: relative;*/
+    overflow: hidden;
+    /*background-color: #9a902b;*/
+    padding: 20px;
+
+}
+
+.div1{
+    float: left;
+    text-align: center;
+    margin-left: 50px;
+    width: 300px;
+    height: 150px;
+    border: 1px solid green;
+    /*position: absolute;*/
+}
+.div2{
+    float: left;
+    text-align: center;
+    margin-left: 50px;
+    width: 300px;
+    /*position: absolute;*/
+    height: 150px;
+    border: 1px solid green;
+
+}
+
+.div3{
+    float: left;
+    /*position: absolute;*/
+    text-align: center;
+    margin-left: 50px;
+
+    width: 300px;
+    height: 150px;
+    border: 1px solid green;
+}
+.xo{
+    /*font-size: 48px; !* تكبير حجم الأيقونة *!*/
+    font-size: 8em;
+
+    width:80px;
+    text-align: center;
+    padding-top: 30px;
+/*background-color: red;*/
+}
+.headersmall{
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+
+}
+.captiondiv{
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 25px;
+}
+
+.line2 {
+    width: 125px;
+    height: 0px;
+    margin: auto;
+    border: 3px solid green;
+    margin-top: 10px;
+
+}
+.sectionheader2{
+    text-align: center;
+}
+.sectionheader2 header3 {
+    text-transform: capitalize;
+}
+.pading2{
+    position: relative;
+    width: 100%;
+}
+
+
+.item1{
+    padding-top: 30px;
+    float: left;
+margin: 50px;
+
+}
+
+.line2 {
+    width: 125px;
+    height: 0px;
+    margin: auto;
+    border: 3px solid green;
+    margin-top: 10px;
+
+
+}
+.div1 {
+     position: relative; /* تأكد من أن العنصر الأب لديه هذا */
+ }
+
+.div1::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%; /* تعيين ارتفاع كامل */
+    background-color: black;
+    opacity: 1;
+    transition: width 2s, opacity 5s; /* إضافة انتقال لخاصية الشفافية */
+}
+
+.div1:hover::after {
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+}
+.div2 {
+    position: relative; /* تأكد من أن العنصر الأب لديه هذا */
+}
+
+.div2::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%; /* تعيين ارتفاع كامل */
+    background-color: black;
+    opacity: 1;
+    transition: width 2s, opacity 5s; /* إضافة انتقال لخاصية الشفافية */
+}
+
+.div2:hover::after {
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+}
+.div3 {
+    position: relative; /* تأكد من أن العنصر الأب لديه هذا */
+}
+
+.div3::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%; /* تعيين ارتفاع كامل */
+    background-color: black;
+    opacity: 1;
+    transition: width 2s, opacity 5s; /* إضافة انتقال لخاصية الشفافية */
+}
+
+.div3:hover::after {
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+}
+.page2 {
+position: relative;
+    height: 100vh;
+    width: 100%;
+    /*padding: 120px 0px;*/
+}
+.page3{
+    padding: 100px 0;
+}
+.page3-content{
+    width:100%;
+    margin: auto;
+    overflow: hidden;
+}
+ .page3-item{
+    width: 33%;
+    float: left;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+/*.page3-item-mid{*/
+/*    width: 5%;*/
+/*    float: left;*/
+/*    margin-bottom: 20px;*/
+
+/*    padding: 20px;*/
+/*}*/
+.page3-content{
+    overflow: hidden;
+    width: 100%;
+}
+.page3-item{
+    width: 33%;
+    float: left;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.page4-content{
+    width:100%;
+    margin: auto;
+    overflow: hidden;
+}
+.div-page4{
+    border: 1px solid green;
+    margin: 15px 15px;
+    width: 30%;
+    height: 250px;
+    float: left;
+
+    padding: 20px;
+}
+.fa{
+        font-size: 30px;
+        text-align: center;
+        padding: 10px;
+        color: green;
+}
+.headerdiv-page4{
+    margin-left: 15PX;
+    display: inline-block;
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+.captiondiv-page4{
+    padding-top: 15px;
+    word-spacing: 1px;
+    font-size: 20px;
+    /*text-align: center;*/
+}
+.div-page4 {
+     position: relative;
+ }
+
+.div-page4::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height:100%; /* تعيين ارتفاع كامل */
+    background-color: black;
+    opacity: .5;
+    transition: width 2s, opacity 5s; /* إضافة انتقال لخاصية الشفافية */
+    top: 0; /* تعيين الموضع */
+    left: 0; /* تعيين الموضع */
+}
+
+.div-page4:hover::after {
+    width: 100%;
+    opacity: 0.2;
+}
+.page4{
+    padding: 120px 0;
+}
+
+.sectionheader-why{
+    padding: 10px;
+}
+
+.line2-why {
+    width: 85px;
+    height: 0px;
+    margin-left: 150px ;
+    border: 3px solid green;
+    margin-top: 10px;
+    display: inline-block;
+}
+.image-page5{
+    float: left;
+    display: inline-block;
+}
+ .service-item-p {
+     padding:20px 10px;
+     width: 600px;
+     height: 100px;
+     /*background-color:yellow;*/
+     font-size: 20px;
+
+ }
+.service-list{
+
+    list-style: none;
+}
+.service-list li {
+    margin-bottom: 10px;
+    color: #1c1a1a;
+    margin-left: 5px;
+    display: inline-block;
+}
+.service-list li i {
+    /*border: 1px solid #0c0303;*/
+    color: #31e731;
+    padding: 3px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    margin: 15px;
+    display: inline-block;
+
+}
+
+.page5{
+    overflow: auto;
+
+    padding: 80px 0;
+}
+.service-item {
+    width: 400px;
+    float: left;
+    display: inline-block;
+
+    box-sizing: border-box;
+}
+
+.service-item-img{
+    float: left;
+    /*background-color: red;*/
+    margin-left: 300px;
+    padding-top: 100px;
+width :40%;
+    display: inline-block;
+}
+.service-bullets {
+    list-style: none;
+    text-align: center;
+}
+.numbers {
+    position: relative;
+    background-image: url(../background.jpg);
+    height: 450px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.numbers-items {
+    overflow: hidden;
+    padding-top: 130px;
+}
+.number-item {
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 90px;
+
+}
+.div1{
+    text-align: center;
+    float: left;
+    border: 1px solid  green;
+    width: 25%;
+    height: 420px;
+
+}
+.div2{
+    text-align: center;
+    float: left;
+    border: 1px solid  green;
+
+    width: 25%;
+    margin-left: 100px;
+    height: 420px;
+}
+.div3{
+    text-align: center;
+    float: left;
+    border: 1px solid  greenyellow;
+
+    width: 25%;
+    margin-left: 100px;
+    height: 420px;
+}
+.text{
+    font-size: 20px;
+    padding: 15px 0;
+    color:black;
+}
+.title1{
+    padding: 15px 0;
+
+}
+.price{
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    border:2px solid  green;
+    margin: auto;
+    padding: 15px 0;
+
+    text-align: center;
+}
+.border{
+    width:50px;
+    height: 0px;
+    border: 2px solid green;
+    margin: auto;
+
+
+}
+.border2 {
+    width: 120px;
+    height: 0px;
+    border: 2px solid green;
+    margin-top:20px;
+    margin: auto;
+
+}
+.border3 {
+    width: 80px;
+    height: 0px;
+    border: 1px solid green;
+    margin: auto;
+
+}
+button{
+    width: 130px;
+    border-radius: 5%;
+    height: 35px;
+    background-color:green;
+    font-size: 20px;
+    color: #d5d5c4;
+}
+h1{
+    padding: 20px 0;
+    text-align: center;
+}
+.page6{
+height: 100vh;
+
+}
+.number-item .fa-solid {
+    color: green;
+    margin-bottom: 15px;
+}
+.fa-solid {
+    color: #6195ff;
+    margin-bottom: 10px;
+}
+.fa-solid {
+    font-size: 2em;
+}
+.head-number-page6{
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+    padding: 5px 0;
+}
+
+.number-item{
+    padding: 10% 0;
+    margin: auto;
+}
+.title-number-page6{
+    font-size: 20px;
+    padding: 5px 0;
+    color: #fff;
+}
+.page7-content{
+    width: 100%;
+    overflow: hidden;
+    background-color: red;
+}
+.image-team-page7{
+    float: left;
+    width: 25%;
+    margin-left: 40px;
+    border: 1px solid;
+    height: 550px;
+}
+.image-page7-title{
+    font-size: 30px;
+    padding: 5px 0;
+    text-align: center;
+}
+.image-page7-p{
+    font-size: 20px;
+    padding: 5px 0;
+
+    text-align: center;
+}
+.image-team{
+padding:20px 0  ;
+    text-align: center;
+}
+.item-page7 a{
+
+    display: block;
+  font-size: 20px;
+    background-color: green;
+    color: #fff;
+    margin-left: auto;
+    z-index: 10;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+}
+.page8-div{
+    float: left;
+    /*background-color: red;*/
+    /*border: 1px solid;*/
+    width:30%;
+    margin-left: 35px;
+    height: 450px;
+}
+
+.fa-regular{
+    display: inline-block;
+    font-size: 20px;
+color: green;
+
+}
+.fa-solid{
+    display: inline-block;
+    font-size: 30px;
+    padding-top:15px;
+    color: green;
+}
+p{
+    opacity:.8;
+
+    display: inline-block;
+    font-size: 20px;
+}
+.image-page8-title{
+    font-size: 20px;
+    opacity:.7;
+    padding:2px 0;
+}
+.image-news-page8{
+   text-align: center;
+    padding:3px;
+
+}
+
+.info-page8.image-page8-ppp{
+    width: 5px;
+
+    padding:5px 0;
+}
+.footer {
+    background-color: rgb(80, 94, 80);
+    text-align: center;
+    height: 250px;
+    padding: 30px 0;
+}
+.footer-links {
+    list-style: none;
+    margin: 5px 0;
+}
+.footer-links li {
+    display: inline-block;
+    background-color: green;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+}
+.footer-links li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    color: #fff;
+    line-height: 50px;
+    padding-top: 15px;
+    padding-right: 15px;
+    font-size: 23px;
+    margin: 0 8px;
+}
+.page8-div::after {
+    position: absolute;
+    content: "";
+    height: 0;
+
+    width:100%; /* تعيين ارتفاع كامل */
+    background-color: black;
+    opacity: .5;
+    transition: height 2s, opacity 5s; /* إضافة انتقال لخاصية الشفافية */
+    top: 0; /* تعيين الموضع */
+    left: 0; /* تعيين الموضع */
+}
+.page8-div{
+    position: relative;
+}
+.page8-div:hover::after {
+    height:100%;
+    opacity: 0.2;
+}
